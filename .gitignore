@@ -1,0 +1,20 @@
+# Local machine settings and IDE files
+local.properties
+.idea/
+*.iml
+.DS_Store
+
+# Gradle and Kotlin caches
+.gradle/
+.kotlin/
+
+# Generated build output
+**/build/
+captures/
+.externalNativeBuild/
+.cxx/
+
+# Local signing material
+*.jks
+*.keystore
+key.properties

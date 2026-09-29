@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">SamsungACRemote</string>
+    <string name="emitter_available">IR emitter available: %1$s</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="supported_frequencies">Supported carrier frequency ranges</string>
+    <string name="frequency_range">%1$d–%2$d Hz</string>
+    <string name="no_emitter">No IR emitter found on this device.</string>
+    <string name="frequencies_unavailable">Could not read carrier frequencies.</string>
+    <string name="no_frequencies_reported">No carrier frequency ranges reported.</string>
+</resources>
