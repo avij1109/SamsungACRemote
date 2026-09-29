@@ -15,23 +15,24 @@ internal class IrTransmitter(
         protocol.carrierFrequencyHz in range.minFrequency..range.maxFrequency
     } == true
 
-    fun transmit(powerOn: Boolean): Boolean {
-        val state = if (powerOn) "ON" else "OFF"
+    fun transmit(previous: AcState, next: AcState): Boolean {
+        val powerChanged = previous.powerOn != next.powerOn
+        val action = if (next.powerOn) "ON" else "OFF"
         val carrier = protocol.carrierFrequencyHz
-        Log.i(TAG, "Samsung AC $state requested at $carrier Hz")
+        Log.i(TAG, "Samsung AC $action requested at $carrier Hz: $next; extended=$powerChanged")
 
         if (!canTransmit || manager == null) {
-            Log.w(TAG, "Samsung AC $state not sent: no emitter or unsupported $carrier Hz carrier")
+            Log.w(TAG, "Samsung AC $action not sent: no emitter or unsupported $carrier Hz carrier")
             return false
         }
 
         return try {
-            val pattern = protocol.patternFor(powerOn)
+            val pattern = protocol.patternFor(next, powerChanged)
             manager.transmit(carrier, pattern)
-            Log.i(TAG, "Samsung AC $state transmitted at $carrier Hz")
+            Log.i(TAG, "Samsung AC $action transmitted at $carrier Hz")
             true
         } catch (error: Exception) {
-            Log.e(TAG, "Samsung AC $state transmission failed at $carrier Hz", error)
+            Log.e(TAG, "Samsung AC $action transmission failed at $carrier Hz", error)
             false
         }
     }

@@ -1,5 +1,31 @@
 <resources>
-    <string name="app_name">SamsungACRemote</string>
+    <string name="app_name">Samsung AC Remote</string>
+    <string name="app_title">Samsung AC</string>
+    <string name="remote_subtitle">Infrared remote</string>
+    <string name="power">Power</string>
+    <string name="set_temperature">SET TEMPERATURE</string>
+    <string name="temperature_value">%1$d°</string>
+    <string name="decrease_temperature">Decrease temperature</string>
+    <string name="increase_temperature">Increase temperature</string>
+    <string name="mode_and_fan_summary">%1$s · %2$s fan</string>
+    <string name="mode">Mode</string>
+    <string name="mode_auto">Auto</string>
+    <string name="mode_cool">Cool</string>
+    <string name="mode_dry">Dry</string>
+    <string name="mode_fan">Fan</string>
+    <string name="fan_speed">Fan speed</string>
+    <string name="fan_auto">Auto</string>
+    <string name="fan_low">Low</string>
+    <string name="fan_medium">Medium</string>
+    <string name="fan_high">High</string>
+    <string name="auto_mode_fan_note">Auto mode controls fan speed automatically.</string>
+    <string name="swing">Swing</string>
+    <string name="vertical_swing">Vertical airflow</string>
+    <string name="sending">Sending IR…</string>
+    <string name="ir_unavailable">IR transmission is unavailable. Check IR details below.</string>
+    <string name="show_ir_details">Show IR details</string>
+    <string name="hide_ir_details">Hide IR details</string>
+    <string name="carrier_in_use">Configured carrier: 38 kHz</string>
     <string name="emitter_available">IR emitter available: %1$s</string>
     <string name="yes">Yes</string>
     <string name="no">No</string>
@@ -8,12 +34,9 @@
     <string name="no_emitter">No IR emitter found on this device.</string>
     <string name="frequencies_unavailable">Could not read carrier frequencies.</string>
     <string name="no_frequencies_reported">No carrier frequency ranges reported.</string>
-    <string name="last_command_sent">Last command sent: %1$s</string>
-    <string name="no_command_sent">None</string>
     <string name="power_on_state">ON</string>
     <string name="power_off_state">OFF</string>
     <string name="power_on">Power ON</string>
     <string name="power_off">Power OFF</string>
-    <string name="unsupported_carrier">38 kHz support could not be confirmed; transmission is disabled.</string>
     <string name="transmission_failed">IR transmission failed. Try again.</string>
 </resources>
