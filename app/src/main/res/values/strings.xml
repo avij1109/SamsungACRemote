@@ -8,4 +8,12 @@
     <string name="no_emitter">No IR emitter found on this device.</string>
     <string name="frequencies_unavailable">Could not read carrier frequencies.</string>
     <string name="no_frequencies_reported">No carrier frequency ranges reported.</string>
+    <string name="last_command_sent">Last command sent: %1$s</string>
+    <string name="no_command_sent">None</string>
+    <string name="power_on_state">ON</string>
+    <string name="power_off_state">OFF</string>
+    <string name="power_on">Power ON</string>
+    <string name="power_off">Power OFF</string>
+    <string name="unsupported_carrier">38 kHz support could not be confirmed; transmission is disabled.</string>
+    <string name="transmission_failed">IR transmission failed. Try again.</string>
 </resources>
