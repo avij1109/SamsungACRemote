@@ -8,7 +8,6 @@ It uses the phone's built-in IR blaster. No internet connection, ads, login, or 
 
 <p align="center">
   <img src="screenshots/remote_main.png" alt="Main remote screen with power and temperature controls" width="30%" />
-  <img src="screenshots/remote_bottom.png" alt="Mode, fan speed, and swing controls" width="30%" />
   <img src="screenshots/IR_info.png" alt="IR emitter and carrier frequency details" width="30%" />
 </p>
 
