@@ -1,8 +1,8 @@
 # Samsung AC Remote
 
-I got tired of AC remote apps showing me ads every time I wanted to change something, so I built my own. This is a small, ad-free infrared remote for my Samsung split AC: open it, make an adjustment, and get on with your day.
+I got tired of AC remote apps showing ads every time I pressed something, so I built my own without ads hehe.
 
-It uses the phone's built-in IR blaster. No internet connection, ads, login, or account required.
+Uses the phone's built-in IR blaster. No internet, no login, no account.
 
 ## Preview
 
